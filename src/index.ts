@@ -1,5 +1,5 @@
-export const addNumbers = (a: number, b: number): number => {
-  return a + b;
-};
+import { app } from './app';
 
-console.log(addNumbers(1, 2));
+app.listen(3000, () => {
+  console.log('Server started on port 3000');
+});

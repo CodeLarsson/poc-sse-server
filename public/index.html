@@ -1,0 +1,18 @@
+<!doctype html>
+
+<head>
+  <script>
+    const eventSource = new EventSource('/sse');
+    eventSource.addEventListener('ping', (event) => {
+      console.log(event.data);
+    });
+  </script>
+</head>
+
+<body>
+  <div id="root"></div>
+  <form method="post" action="/push-event">
+    <input type="text" name="message" />
+    <input type="submit" value="Send" />
+  </form>
+</body>
