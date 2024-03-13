@@ -1,0 +1,29 @@
+{
+  "name": "base-ts-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "dev": "nodemon ./src/index.ts",
+    "start": "tsc && node ./build/index.js",
+    "test:coverage": "jest --coverage",
+    "test": "jest",
+    "format": "prettier --write \"./src/**/*.ts\""
+  },
+  "keywords": [],
+  "author": "@CodeLarsson",
+  "license": "ISC",
+  "devDependencies": {
+    "@jest/globals": "^29.7.0",
+    "@types/node": "^20.11.20",
+    "jest": "^29.7.0",
+    "nodemon": "^3.1.0",
+    "prettier": "^3.2.5",
+    "prettier-plugin-organize-imports": "^3.2.4",
+    "ts-jest": "^29.1.2",
+    "tsx": "^4.7.1",
+    "typescript": "^5.3.3"
+  }
+}
